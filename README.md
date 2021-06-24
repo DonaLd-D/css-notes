@@ -15,6 +15,42 @@
 
 ***
 
+## 清浮动的三种方法
+- 父元素设置属性
+```
+overflow:hidden;
+```
+- 伪元素清除
+```
+.clearfix:after{
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix{
+    *zoom:1;
+}
+```
+- 双伪元素清除
+```
+.clearfix:before,
+.clearfix:after{
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    *zoom:1;
+}
+```
+
+***
+
 ## 页面设置全灰的属性
 ```
 filter: grayscale(100%);
