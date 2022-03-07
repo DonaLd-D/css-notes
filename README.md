@@ -1,3 +1,23 @@
+## `less`(（Leaner Style Sheets 的缩写） 是一门向后兼容的 CSS 扩展语言。)
+- vscode插件
+  - easy less(保存时自动把less转换为css)
+- npm package
+  - less-loader(A Less loader for webpack. Compiles Less to CSS.)
+- 内容
+  - 变量（Variables）
+  - 混合（Mixins）
+  - 嵌套（Nesting）
+  - @规则嵌套和冒泡
+  - 运算（Operations）
+  - calc() 特例
+  - 转义（Escaping）
+  - 函数（Functions）
+  - 命名空间和访问符
+  - 映射（Maps）
+  - 作用域（Scope）
+  - 注释（Comments）
+  - 导入（Importing）
+
 ## -webkit-，-moz-，-ms-，-o-具体指什么？
 ### -webkit-，-moz-，-ms-，-o-是指浏览器私有前缀名。
 
@@ -17,11 +37,11 @@
 
 ## 清浮动的三种方法
 - 父元素设置属性
-```
+```css
 overflow:hidden;
 ```
 - 伪元素清除
-```
+```css
 .clearfix:after{
     content:'';
     display:block;
@@ -35,7 +55,7 @@ overflow:hidden;
 }
 ```
 - 双伪元素清除
-```
+```css
 .clearfix:before,
 .clearfix:after{
     content:'';
@@ -52,7 +72,7 @@ overflow:hidden;
 ***
 
 ## 页面设置全灰的属性
-```
+```css
 filter: grayscale(100%);
 ```
 
